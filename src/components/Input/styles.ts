@@ -1,6 +1,12 @@
 import styled, { css } from 'styled-components';
 
-export const Container = styled.div`
+type IInputProps = {
+  isFocused: boolean;
+  isFilled: boolean;
+  isErrored?: boolean;
+}
+
+export const Container = styled.div<IInputProps>`
   display: flex;
   align-items: center;
 
